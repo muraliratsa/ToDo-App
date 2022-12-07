@@ -1,0 +1,24 @@
+<footer>
+    <p>copyright 2022 Murali Ratsa</p>
+</footer>
+
+<script>
+    const listTitle = document.querySelector(".two .title-box").innerText;
+
+    // To add background color of the listName anchor tag 
+    const listTags = document.querySelectorAll("div a") ;
+    
+    listTags.forEach(function(tag) {
+        tag.classList.remove("addBackground");
+    })
+
+    for (let i = 0; i < listTags.length; i++) {
+        if (listTitle === listTags[i].innerText) {
+            listTags[i].classList.add("addBackground");
+        } 
+    }
+    // end 
+</script>
+</body>
+
+</html>
